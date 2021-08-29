@@ -17,7 +17,7 @@ const BasicForm = () => {
     useEffect(() => {
       
         async function getData(){
-            const res = await axios.get(`http://benefitx.blue-ex.com/api/customerportal/login.php?request={"username":"${username}","password":"${password}"}`
+            const res = await axios.get(`https://benefitx.blue-ex.com/api/customerportal/login.php?request={"username":"${username}","password":"${password}"}`
             );
             let message = res.data.message ;
             let status = res.data.status;
